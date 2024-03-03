@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #000000;
+
+}
+
+
 nav {
     position: fixed;
     padding: 16px 32px;
@@ -42,7 +51,7 @@ a {
 }
 
 nav .logo {
-    font-size: 32px;
+    font-size: clamp(1.5rem, 1.01028rem + 2.062vw, 2rem);
 }
 
 
@@ -297,6 +306,8 @@ footer a {
     .container {
         gap: 0px;
         padding: 16px 32px;
+        padding-right: clamp(1rem, 0.02055rem + 4.124vw, 2rem);
+        padding-left: clamp(1rem, 0.02055rem + 4.124vw, 2rem);
     }
 
     aside {
@@ -309,4 +320,11 @@ footer a {
         font-size: 16px;
     }
 
+}
+
+.space {
+    display: block;
+    margin-top: 10px;
+    border: #c0a7a7 1px solid;
+    margin-bottom: 10px;
 }
